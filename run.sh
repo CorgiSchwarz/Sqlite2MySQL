@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 sqlite_address="$1"
-python3 TableGetter.py $sqlite_address
 echo "dumping db: \"$sqlite_address\"! "
 sqlite3  $sqlite_address .dump > "sqlite3.sql"
 echo "dump done"
